@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 2816px;
+    background-color: #151A20;
+
+}
+
+.bg {
+    background-image: url(/images/header-bg.png);
+    position: absolute;
+    width: 1295px;
+    height: 756px;
+    left: 161px;
+    top: 0px;
+
+}
+
+.header_logo {
+    position: absolute;
+    width: 115px;
+    height: 40.84px;
+    left: 134px;
+    top: 29px;
+}
+
+.user_fire {
+    position: absolute;
+    width: 12.5px;
+    height: 17px;
+    left: 1041.24px;
+    top: 32px;
+}
+
+.user_bell {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 1096px;
+    top: 32px;
+}
+
+.user_pic {
+    position: absolute;
+    width: 45.66px;
+    height: 41.01px;
+    left: 1144px;
+    top: 25px;
+}
+
+.little_dune {
+    width: 255px;
+    height: 341px;
+    margin: 0;
+
+}
+
+nav {
+    position: absolute;
+    width: 54px;
+    height: 561px;
+    left: 0px;
+    top: 115px;
+
+    background: #1E242C;
+    box-shadow: 9px 4px 18px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 50px 50px 0px;
+}
+
+footer {
+    background: #1E242C;
+}
