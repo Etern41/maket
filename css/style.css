@@ -1,3 +1,7 @@
+@import url(../fonts/BebasNeueCyrillic/bebas-font.css);
+@import url(../fonts/Montserrat/monserrat-font.css);
+@import url(../fonts/Poppins/poppins-font.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -40,13 +44,19 @@ header {
     display: flex;
     width: 115px;
     height: 41px;
-    left: 134px;
+    left: 140px;
     top: 29px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_logo p {
+    margin: 0 0 0 10px;
 }
 
 .header_fire {
@@ -71,21 +81,46 @@ header {
 
 }
 
+.user_cond {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 0 5px;
+}
+
 .header_userinfo p {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 14px;
 }
 
-h1 {
+.header_text {
     position: absolute;
-    width: 424px;
-    height: 65px;
-    left: 135px;
-    top: 278px;
-    font-family: 'Bebas Neue Cyrillic';
+
+    left: 145px;
+    top: 219px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dune_4k {
+    display: flex;
+    align-items: center;
+
+}
+
+.film_fire {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+
+
+    font-family: 'Bebas', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
@@ -94,23 +129,11 @@ h1 {
     align-items: center;
 }
 
-.header_text p {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-}
 
-.header_text h2 {
-    position: absolute;
-    width: 117px;
-    height: 65px;
-    left: 166px;
-    top: 219px;
-    font-family: 'Bebas Neue';
+
+h2 {
+
+    font-family: 'Bebas', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
@@ -120,12 +143,7 @@ h1 {
 }
 
 h3 {
-    position: absolute;
-    width: 175px;
-    height: 65px;
-    left: 164px;
-    top: 343px;
-    font-family: 'Bebas Neue Cyrillic';
+    font-family: 'Bebas', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -133,6 +151,75 @@ h3 {
     display: flex;
     align-items: center;
     color: #FFC30D;
+}
+
+.header_text p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
+.text_fire {
+    margin: 0 10px 0 0;
+    width: 18px;
+    height: 24px;
+
+}
+
+.text_4k {
+    margin: 0 10px 0 0;
+    width: 24px;
+    height: 24px;
+
+}
+
+.header_review {}
+
+span {
+    color: #FFC30D;
+
+}
+
+.header_rating {
+    display: flex;
+    font-family: 'Bebas', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 10px 10px 10px 0;
+
+}
+
+.header_rating div {
+    margin: 10px 20px 10px 0;
+}
+
+.header_anchor {
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(270deg, #8743FF 0%, #4136F1 100%);
+    box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
+    backdrop-filter: blur(15px);
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .little_dune {
@@ -149,10 +236,22 @@ nav {
     height: 561px;
     left: 0px;
     top: 115px;
-
     background: #1E242C;
     box-shadow: 9px 4px 18px 10px rgba(0, 0, 0, 0.25);
     border-radius: 0px 50px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 20px;
 }
 
 .new {
@@ -161,6 +260,22 @@ nav {
 
 .new p {
     padding: 5px 0 40px 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 14px;
+}
+
+.new_fire_text {}
+
+.foot_review {
+
+
+    width: 530px;
+    height: 60px;
+    left: 155px;
+    top: 1386px;
 }
 
 .new_bg {
@@ -199,54 +314,55 @@ nav {
 }
 
 .shows_preview {
-    margin: 0 auto;
+
     width: 1170px;
-
-
-
-
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 14px;
 }
+
 
 .side_pic1,
 .side_pic2,
 .side_pic3,
 .side_pic4,
 .side_pic5 {
-    position: absolute
+    position: absolute;
 }
+
 
 .side_pic1 {
     left: 1316.51px;
-    top: 1539px;
+    top: 1518px;
 }
 
 .side_pic2 {
     left: 1316.51px;
-    top: 1724px;
+    top: 1703px;
 }
 
 .side_pic3 {
     left: 1316.51px;
-    top: 1969px;
+    top: 1937px;
 }
 
 .side_pic4 {
     left: 1316.51px;
-    top: 2213px;
+    top: 2170px;
 }
 
 .side_pic5 {
     left: 1316.51px;
-    top: 2457px;
+    top: 2401px;
 }
 
 .films {}
 
 .films p {
-    padding: 25px 0 40px 0;
+    padding: 30px 0 40px 0;
 }
-
-
 
 .films_pic {
     display: grid;
@@ -258,6 +374,7 @@ nav {
 
 .f1 {
     grid-area: 1 / 1 / 2 / 2;
+
 }
 
 .f2 {
@@ -289,7 +406,7 @@ nav {
 }
 
 .tvshows p {
-    padding: 25px 0 40px 0;
+    padding: 30px 0 40px 0;
 }
 
 .tv_pic {
@@ -326,10 +443,45 @@ nav {
 
 
 footer {
-    position: absolute;
-    width: 1440px;
+    margin: auto 0 0 0;
+    width: 100%;
     height: 110px;
     background: #1E242C;
-
     top: 2691px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: #8E8E8E;
+    margin: 0 107px;
+}
+
+.footer_anchor {
+    font-family: 'Bebas', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 14px;
+}
+
+footer a {
+    margin-left: 30px;
+}
+
+.footer_logo {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 14px;
+    justify-content: center;
+    align-items: center;
 }
