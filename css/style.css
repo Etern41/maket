@@ -14,7 +14,7 @@ body {
 
 }
 
-.bg {
+header {
     background-image: url(/images/header-bg.png);
     position: absolute;
     width: 1295px;
@@ -73,6 +73,38 @@ nav {
     background: #1E242C;
     box-shadow: 9px 4px 18px 10px rgba(0, 0, 0, 0.25);
     border-radius: 0px 50px 50px 0px;
+}
+
+.new {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px;
+    grid-template-areas:
+        "a a b c"
+        "a a d d";
+
+    height: 688px;
+
+}
+
+.new_fire {
+    background-image: url(/images/ref/fire.png);
+    grid-area: "a";
+}
+
+.new_fire {
+    background-image: url(/images/ref/hollywood.png);
+    grid-area: b;
+}
+
+.new_fire {
+    background-image: url(/images/ref/mortal.png);
+    grid-area: c;
+}
+
+.new_fire {
+    background-image: url(/images/ref/sword.png);
+    grid-area: d;
 }
 
 footer {
