@@ -10,57 +10,63 @@ body {
     flex-direction: column;
     width: 1440px;
     height: 2816px;
+    align-items: center;
     background-color: #151A20;
 
 }
 
-header {
+.header_bg {
     background-image: url(/images/header-bg.png);
     position: absolute;
     width: 1295px;
     height: 756px;
-    left: 161px;
+    left: 145px;
     top: 0px;
 
 }
 
+header {
+    width: 1295px;
+    height: 756px;
+}
+
 .header_logo {
     position: absolute;
+    display: flex;
     width: 115px;
-    height: 40.84px;
+    height: 41px;
     left: 134px;
     top: 29px;
 }
 
-.user_fire {
+.header_fire {
     position: absolute;
-    width: 12.5px;
-    height: 17px;
-    left: 1041.24px;
+    left: 1040px;
     top: 32px;
 }
 
-.user_bell {
+.header_bell {
     position: absolute;
-    width: 15px;
-    height: 15px;
-    left: 1096px;
-    top: 32px;
+    left: 1095px;
+    top: 36px;
 }
 
-.user_pic {
+.header_userinfo {
     position: absolute;
-    width: 45.66px;
-    height: 41.01px;
-    left: 1144px;
+    display: flex;
+    width: 160px;
+    height: 41px;
+    left: 1145px;
     top: 25px;
 }
 
+
 .little_dune {
+    position: absolute;
     width: 255px;
     height: 341px;
-    margin: 0;
-
+    left: 1050px;
+    top: 230px;
 }
 
 nav {
@@ -76,37 +82,89 @@ nav {
 }
 
 .new {
+    width: 1170px;
+}
+
+.new p {
+    padding: 5px 0 40px 0;
+}
+
+.new_bg {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 100px;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 550px 290px 290px;
+    grid-template-rows: 316px 282px;
+    gap: 20px 20px;
     grid-template-areas:
-        "a a b c"
-        "a a d d";
-
-    height: 688px;
-
+        "a b c"
+        "a d d";
 }
 
 .new_fire {
     background-image: url(/images/ref/fire.png);
-    grid-area: "a";
+    grid-area: a;
+    width: 550px;
+    height: 618px;
 }
 
-.new_fire {
+.new_holly {
     background-image: url(/images/ref/hollywood.png);
     grid-area: b;
 }
 
-.new_fire {
+.new_mortal {
     background-image: url(/images/ref/mortal.png);
     grid-area: c;
 }
 
-.new_fire {
+.new_sword {
     background-image: url(/images/ref/sword.png);
     grid-area: d;
+    width: 600px;
+    height: 282px;
+}
+
+.shows_preview {
+    margin: 0 auto;
+    width: 1440px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+
+}
+
+.films {}
+
+.films p {
+    padding: 25px 0 40px 0;
+}
+
+.films_pic {
+    display: flex;
+    flex-direction: column;
+}
+
+.films_row1,
+.films_row2 {
+    gap: 16px 7px;
+}
+
+.tvshows p {
+    padding: 25px 0 40px 0;
+}
+
+.cartoons p {
+    padding: 25px 0 40px 0;
+}
+
+.anime p {
+    padding: 25px 0 40px 0;
 }
 
 footer {
+    width: 100%;
+    margin-top: 82px;
     background: #1E242C;
 }
